@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+   <!-- Metadata for the page -->
+   <head>
+       <!-- Title of webpage in the browser -->
+       <title>Projects</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+       <link rel="icon" href="Headshot.ico" type="image/x-icon">
+       <!--You can add style elements here-->
+       <link rel="stylesheet" href="styles.css">
+    </head>
+  
+<body>
+               <!-- Main page heading -->
+    <div class="header">
+        <h1 class="title-container">My Projects</h1>
+        <img class="logo" alt="Personal logo" src="jvlogo.jpg">
+    </div>
+    
+    <nav>
+        <div class="nav-container">
+            <a class="nav-item" href="home.html">Home</a>
+            <a class="nav-item" href="projects.html">Projects</a>
+            <a class="nav-item" href="about.html">About</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+        </div>
+    </nav>
+     
+       <!-- A paragraph -->
+       <div class="content">
+       <br>
+       <p>First of all, this entire website is a project!&nbsp;Although they aren't actual coding languages, I learned HTML and some 
+        CSS to create an entirely customizable website from scratch.&nbsp;No website templates were used. Even the logo was drawn by hand!</p>
+
+        <p>I'm now a third-year student at the University of Toronto, and I've done various projects throughout my time here.&nbsp;
+          Below are these projects (from most to least recent).</p>
+        
+       </div>
+       <div class="content">
+        <h2 style="margin-bottom: 0;">Workflow Automation with n8n (Jun 2025 - Aug 2025)</h2>
+        <h4 style="margin-top: 0;">Skills: AI, JavaScript, TypeScript, JSON, APIs</h4>
+        <p>I had an internship this summer working at a small startup, <a class="link" href="https://www.varritech.com/">
+        Varritech Development Services</a>, which focuses on using AI-powered development to develop apps and websites.&nbsp;I had the opportunity
+        to work on 9 automation workflows on the n8n platform, integrating third-party APIs, custom webhooks, and JavaScript for dynamic JSON data handling.
+        &nbsp;I collaborated with a team of 2 developers while independently leading the majority of projects, ensuring timely delivery and maintainable code.
+        &nbsp;Some highlights for my projects include:</p>
+        <ul>
+          <li>Statement of Work (SOW) Automator: Developed a workflow that generated full project documents with AI-driven stack recommendations.
+            &nbsp;Implemented data parsing and NLPs to streamline planning, becoming the company's primary SOW tool.</li>
+          <li>Employee Performance Dashboard: Developed an internal monitoring system that aggregated data from Slack, GitHub, and ClickUp via 
+            API integrations.&nbsp;Designed custom KPIs (e.g., response latency, commit frequency, logged hours, video review time) and automated 
+            reporting dashboards to provide actionable insights for management.</li>
+          <li>Order and Inventory Manager: Built an automation for a real company client, which linked Telegram messages to an Airtable database in real time.
+            &nbsp;It enabled instant inventory/order updates using custom webhooks and REST API calls.&nbsp;Incorporated JSON parsing & error-handling to ensure 
+            reliability.</li>
+          <li>AI Task Generator for ClickUp: Engineered an automation pipeline that required minimal project input and generated detailed, 
+            customized task lists in ClickUp using AI models, acting as a virtual project manager.</li>
+        </ul>
+      <p>Below are some brief snippets of my workflows.</p>
+
+      <img alt="Workflow Snippet of AI Task Generator" style="width: auto; height: 30vh;" src="WorkflowSnippet1.png">
+      <p class="caption">This workflow snippet is the beginning of the virtual project manager workflow, which generated detailed, 
+        customized task lists in ClickUp, as well as supplementary comments, using AI models with minimal input.&nbsp;It starts by analyzing this 
+        input, which is the project's Statement of Work, using OpenAI.&nbsp;Then, it makes several HTTP requests to the ClickUp API (both GET and 
+        POST requests) to create folders.</p>
+      <img alt="Workflow Snippet of SOW Automator" style="width: auto; height: 50vh;" src="WorkflowSnippet2.png">
+      <p class="caption">This workflow snippet displays the starting nodes for the SOW Automator workflow, which has improved project efficiency and is
+        implemented throughout the company.&nbsp;It takes basic project information and responds with a fully-written Statement of Work.&nbsp;
+        Prioritizing company input, it infers with AI to create sections such as the Scope & Objectives, Technical Stack, and Deliverables by Phase.</p>
+      </div>
+
+       <div class="content">
+        <h2 style="margin-bottom: 0;">Arduino-Powered LED Console (Jun 2025 - Aug 2025)</h2>
+        <h4 style="margin-top: 0;">Skills: Arduino, Circuit Design, Game Logic</h4>
+        <p>I wanted to refresh my hardware skills while working in software this past summer, so this personal project involved making a custom handheld 
+          game console from scratch using Arduino, breadboards, and discrete components like resistors and LEDs.&nbsp;Key features include:</p>
+          
+        <ul>
+          <li>A pixel-based display created from LEDs</li>
+          <li>Real-time gameplay mechanics</li>
+          <li>Custom circuit design and game logic developed in Arduino, implementing a Chrome Dino-inspired game</li>
+        </ul>
+      <p>Below are some project photos.</p>
+
+      <div style="display: flex; align-items: stretch; gap: 2px;">
+        <img alt="Dottijump Product" src="dottijump1.jpg" style="width: auto; height: 50vh;">
+        <img alt="Dottijump Interior" src="dottijump2.jpg" style="width: auto; height: 50vh;">
+      </div>
+
+      <p class="caption">The interior console mechanics incorporated an Arduino board, powered by a 9 V battery, complete with a breadboard containing 
+        the custom circuit design.&nbsp;The console box was painted and designed in the style of a retro console.</p>
+
+      <video autoplay muted loop style="width: 40%; height: auto;" controls>
+        <source src="dottijump.mp4" type="video/mp4">
+      </video> 
+      
+      <p class="caption">The user controls their character, resting near the bottom left of the display, by pressing the button to jump.&nbsp;It 
+        must dodge the continuously approaching obstacles, and the game resets once the character hits an obstacle.</p>
+      </div>
+
+
+      <div class="content">
+        <h2 style="margin-bottom: 0;">Appledrop on FPGA Board (Mar 2025 - Apr 2025)</h2>
+        <h4 style="margin-top: 0;">Skills: C, FPGA</h4>
+        <p>This project involved a lot of creativity and design, as it involved designing and programming an original game in C for the 
+          DE1-SoC FPGA board.&nbsp;Some key features include:</p>
+          
+        <ul>
+          <li>A variety of board features to enrich the game, including VGA output, PS/2 keyboard input, pushbuttons, switches, LEDs, and 
+            seven-segment displays</li>
+          <li>Advanced coding structure, leveraging both leveraging both interrupts and polling for responsive real-time control of multiple I/O devices</li>
+          <li>Game mechanics incorporating difficulty selection, pausing, high score tracking, and strike systems, using FSM logic for state transitions 
+            (start menu, gameplay, game over, restart)</li>
+        </ul>
+      <p>Below are some photos:</p>
+
+      <div style="display: flex; align-items: stretch; gap: 2px;">
+        <img alt="Appledrop Start Menu" src="startmenu.jpg" style="width: auto; height: 30vh;">
+        <img alt="Appledrop Gameplay Menu" src="gamemenu.jpg" style="width: auto; height: 30vh;">
+        <img alt="Appledrop Game Over Menu" src="gameovermenu.jpg" style="width: auto; height: 30vh;">
+      </div>
+
+      <p class="caption">Users can adjust difficulty using the DE1-SoC switches, and adjust sound/initialize the game using the pushbuttons.&nbsp;
+        The user must use the PS/2 keyboard arrow keys to maneuver their basket and catch all the falling apples.&nbsp;Strikes, incremented when a rotten apple 
+        is accidentally caught, are listed in the top right corner of the gameplay screen.&nbsp;When the user has exceeded 3 strikes in catching rotten apples 
+        or missing good apples, the user is redirected to a game over screen.</p>
+
+      <video autoplay muted loop style="width: 40%; height: auto;" controls>
+        <source src="appledropdemo.mp4" type="video/mp4">
+      </video> 
+      
+      <p class="caption">A demo shows some of the various game features.</p>
+      </div>
+
+       <div class="content">
+        <h2 style="margin-bottom: 0;">HF Radio Bandpass Filter, Limiter, Quadrature Mixer, and I/Q Amplifier (Jan 2025 - Apr 2025)</h2>
+        <h4 style="margin-top: 0;">Skills: Printed Circuit Board (PCB) Design, Altium, LTSpice, Soldering, Circuit Testing, Lab Instrumentation</h4>
+        <p>This group project required us to develop a radio receiver by applying electrical theory to create a custom receiver design, while abiding 
+          by design constraints.&nbsp;My responsibilities included:
+        </p>
+        <ul>
+          <li>Designing the bandpass filter component, opting for a passive second-order Butterworth filter configuration to maximize signal integrity 
+            of the radio message, successfully producing frequency cutoffs at approximately 8 and 16 MHz.
+          </li>
+          <li>Simulating my circuit design using the LTSpice simulation software, and testing using breadboarding and lab instrumentation like spectrum 
+            analyzers and oscilloscopes.</li>
+          <li>Designing the PCB using Altium, creating schematics and layouts, and assisting in board assembly through a combination of soldering oven 
+            and hand-soldering methods.</li>
+          <li>Serving as Project Manager, using Gantt charts to keep the team on track for completing various deliverables and engineering reports.</li>
+        </ul>
+      <p>Below are some images of the PCB and results.</p>
+
+      <img alt="Circuit Altium Schematic" style="width: auto; height: 50vh;" src="altiumschematic.png">
+      <p class="caption">Our entire circuit schematic in Altium.</p>
+      <img alt="PCB Altium Schematic" style="width: auto; height: 30vh;" src="pcbaltium.png">
+      <p class="caption">Our circuit design, which I implemented as a PCB layout.</p>
+      <img alt="PCB Physical Layout" style="width: auto; height: 30vh;" src="pcbphysical.png">
+      <p class="caption">Our final physical PCB, which incorporated various testing points through hairpin configurations for resistor soldering.
+        &nbsp;Some fixes, such as extra wiring and a voltage divider, were required to optimize results.</p>
+      <img alt="Bandpass Filter Results" style="width: auto; height: 50vh;" src="bpfresults.png">
+      <p class="caption">After successful circuit simulation, my bandpass filter design produced our desired results, with cutoffs at 8.06 and 
+        14.10 MHz (this fell within our error tolerance).</p>
+      </div>
+
+      <div class="content">
+        <h2 style="margin-bottom: 0;">Snake on FPGA Board (Oct 2024 - Dec 2024)</h2>
+        <h4 style="margin-top: 0;">Skills: Verilog HDL, Quartus, ModelSim, FSMs, FPGA</h4>
+        <p>This project strengthened my hardware programming skills, as it required me to program a game entirely using the Verilog HDL.&nbsp;
+          I developed a hardware implementation of the classic game Snake. This project included:
+        </p>
+          
+        <ul>
+          <li>Custom game logic and VGA display output on the DE1-SoC FPGA board</li>
+          <li>Finite state machines to control game mechanics and synchronization for effective digital system design</li>
+          <li>A mix of combinational and sequential logic to program the snake as a continuously moving shift register</li>
+        </ul>
+      <p>Below are some photos:</p>
+
+      <div style="display: flex; align-items: stretch; gap: 2px;">
+        <img alt="Worm Start Menu" src="gamestart.jpg" style="width: auto; height: 30vh;">
+        <img alt="Worm Gameplay Menu" src="gameend.jpg" style="width: auto; height: 30vh;">
+      </div>
+
+      <p class="caption">The user uses the KEY pushbuttons on the DE1-SoC board to control their snake in 4 directions, ending the game once 
+        the border is hit.
+      </p>
+
+      <video autoplay muted loop style="width: 40%; height: auto;" controls>
+        <source src="wormdemo.mp4" type="video/mp4">
+      </video> 
+      
+      <p class="caption">Here is a game demo showing a game from start to finish.&nbsp;The game is technically called "Worm", as our character is 
+        burrowing underground (hence the grass at the top of the game screen)!</p>
+      </div>
+
+      <div class="content">
+        <h2 style="margin-bottom: 0;">News Scraper for Sustainable Aviation Fuel (SAF) Projects (Jan 2024 - Apr 2024)</h2>
+        <h4 style="margin-top: 0;">Skills: Project Management, Collaboration</h4>
+        <p>In a 6-person team, we created a Python-based news scraper focused on sustainable aviation fuel updates. My roles included:</p>
+          
+        <ul>
+          <li>Serving as Project Manager, ensuring timely delivery through Gantt charts and weekly team meetings</li>
+          <li>Coordinating with a real client company, SustainableAF, using feedback to contribute to an endorsed final solution integrating JSON, SQL databases, 
+            search engine APIs, and AI-driven quality assurance</li>
+        </ul>
+
+      <p>Here is a screenshot of our scraper prototype:</p>
+
+      <div style="display: flex; align-items: stretch; gap: 2px;">
+        <img alt="Screenshot of JSON Scraper" src="scraperdemo.jpg" style="width: auto; height: 50vh;">
+      </div>
+
+      <p class="caption">For our project, a fully working prototype was made, which was tested against a strict set of categories to compare 
+        it against the original client database.
+      </p>
+      </div>
+
+      <div class="content">
+        <h2 style="margin-bottom: 0;">Improving Hart House Theatre Accessibility (Sep 2023 - Dec 2023)</h2>
+        <h4 style="margin-top: 0;">Skills: Engineering Design, Project Management</h4>
+        <p>In a 5-person team, we designed a creative solution for a university theatre. This included:</p>
+          
+        <ul>
+          <li>Co-developed an innovative foldable theatre seating redesign, enhancing accessibility and inclusion for diverse audiences 
+            while applying principles from the engineering design process</li>
+          <li>Served as Project Manager, coordinating team schedules and contributing to two major engineering reports documenting concept 
+            development and design implementation</li>
+        </ul>
+
+      <p>Here is a 3D rendering of one of our redesigns:</p>
+
+      <div style="display: flex; align-items: stretch; gap: 2px;">
+        <img alt="Seat Redesign" src="theatreseat.jpg" style="width: auto; height: 40vh;">
+      </div>
+
+      <p class="caption">Hundreds of solutions were drafted between all members, but we decided to create an innovative approach to theatre seating: 
+        making the seats completely foldable so that they could easily allow wheelchair users to sit in any section of their choosing.</p>
+      </div>
+
+        <br>
+        <hr>
+        <br>
+    </body>
+</html>
