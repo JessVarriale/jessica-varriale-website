@@ -55,6 +55,6 @@ ul {
 .caption {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: italic;
-  font-size: 95%;
-  letter-spacing: 120%;
+  font-size: 0.95em;
+  letter-spacing: 0.02em;
 }
